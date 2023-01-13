@@ -1,0 +1,35 @@
+<form>
+    <div>
+        <label for="nombre" class="form-label"><b>Nombre:</b></label>
+        <br>
+        <input type="text" class="form-control" id="name" name="nombre"  required #nombre>
+    </div>
+
+    <br>
+    <div>
+        <label for="dni" class="form-label"><b>DNI:</b></label>
+        <br>
+        <input type="text" class="form-control" id="dni" name="dni" required #dni>
+    </div>
+
+    <br>
+    <div>
+        <label for="" class="form-label"><b>Estado Civil:</b></label>
+        <br>
+        <select name="Estado_civil" id="Estado_civil" class="form-select form-select-sm" #estadocivil>
+            <option value="soltera">Soltera</option>
+            <option value="casada">Casada</option>
+            <option value="divorciada">Divorciada</option>
+
+        </select>
+    </div>
+
+
+    <br>
+    <div class="d-grid gap-3 float-start">
+        <button (click)="onEnviar(nombre.value,dni.value,estadocivil.value)" type="submit" [className]="btnColor">Enviar</button>
+    </div>
+
+
+</form>
+

@@ -1,0 +1,15 @@
+<div class="container" >
+  <div class="row">
+    <h1 style="text-align: center;">Registro de Personas</h1>
+
+    <div style="background-color: rgba(156, 223, 156, 0.575); color: rgb(7, 75, 7);" *ngIf="Registro" id="respuesta">
+      <p>¡Registro Existoso!<span>{{Registro}}</span></p>
+    </div>
+
+    <div class="col-6" style="margin: 0 auto;">
+      <app-registro [btnColor]="'btn btn-success'" (newItenEvent)="onSuccess($event)"></app-registro>        
+    </div>
+
+  </div>
+
+</div>
